@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200128161726_first .cs" />
+    <Compile Remove="Migrations\20200128161726_first .Designer.cs" />
+    <Compile Remove="Migrations\20200128161819_first .cs" />
+    <Compile Remove="Migrations\20200128161819_first .Designer.cs" />
+    <Compile Remove="Migrations\20200128161851_first .cs" />
+    <Compile Remove="Migrations\20200128161851_first .Designer.cs" />
+    <Compile Remove="Migrations\20200128162821_changes in ProjectManagement Table.cs" />
+    <Compile Remove="Migrations\20200128162821_changes in ProjectManagement Table.Designer.cs" />
+    <Compile Remove="Migrations\20200128162853_changes in ProjectManagement Table.cs" />
+    <Compile Remove="Migrations\20200128162853_changes in ProjectManagement Table.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PeoplePortalDomainLayer\PeoplePortalDomainLayer.csproj" />
+  </ItemGroup>
+
+</Project>
